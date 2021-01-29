@@ -1,0 +1,32 @@
+* {
+  color: #fff;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  background-color: dimgray;
+  min-height: 100vh;
+  font-size: 20px;
+}
+
+.container {
+  border: 1px solid aquamarine;
+}
+
+.container > div {
+  color: #fff;
+  background-color: lightskyblue;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.container > div:hover {
+  background-color: darkcyan;
+}
+
+h3 {
+  text-align: center;
+}
