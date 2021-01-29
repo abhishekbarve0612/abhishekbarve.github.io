@@ -15,12 +15,13 @@ body {
 }
 
 .visited {
-  background-color: darkorange;
+  background-color: green;
   text-align: center;
 }
 
 .bombed {
   background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
+  background-color: red;
 }
 
 .cell {
