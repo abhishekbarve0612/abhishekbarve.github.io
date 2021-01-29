@@ -1,0 +1,81 @@
+<!--
+  Grocery list - 2
+One of the important features of a grocery list is the calculation of the Grand Total. Grand Total is just the sum of the price of all items.
+Details
+
+    We have created a small version of a grocery list that consists of some times.
+
+    The price of each is written in a tr element with a data attribute data-ns-test=price.
+
+    There is a Total button your task is to add functionality to this button.
+
+    On click event of this button, the function calcTotal is be executed
+
+    Write a code in calcTotal to calculate the cost of all items and write it inside a row and append it to the table.
+
+    The new row should have two column one with Text Grand Total and other should contain the total price along with a attribute data-ns-test=grandTotal for example <tr><td>Grand Total</td><td data-ns-test="grandTotal">303</td></tr>
+
+    If calcTotal is executed for the second time you have to update the last row with the new grand total price .
+
+    Follow the example given at the end.
+
+
+Acceptance criteria
+
+
+    Correct Grand Total.
+
+    Removal of previous Grand Total.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List - 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Do not edit this you need to use JS to scrap prices and display their sum -->
+  <h1>Grocery List</h1>
+  <table>
+      <thead>
+          <tr>
+              <th>Sr. No.</th>
+              <th>Title</th>
+              <th>Price</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Item-1</td>
+              <td data-ns-test="price">100</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Item-2</td>
+              <td data-ns-test="price">200</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Item-3</td>
+              <td data-ns-test="price">2</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Item-4</td>
+              <td data-ns-test="price">1</td>
+          </tr>
+          <tr id="total" style="display: none;">
+            <td>#</td>
+            <td>Grand Total</td>
+            <td data-ns-test="grandTotal">303</td>
+          </tr>
+      </tbody>
+  </table>
+  <button onClick='calcTotal()'>Total</button>
+</body>
+<script src="script.js"></script>
+</html>

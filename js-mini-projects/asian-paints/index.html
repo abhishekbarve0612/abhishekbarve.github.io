@@ -1,0 +1,73 @@
+<!--
+
+
+  You want the users to be able to compare the different colours of their choice and choose the one that looks the best for their walls. You ask them the colours and display them in different blocks representing the walls. You also decided that limiting it to 9 walls is the best bet to not confuse them and still give them ample colours and shades to compare.
+
+Acceptance Criteria:
+Create 9 blocks, 2 input fields, and 2 buttons.
+
+Each block has an id corresponding to it in 1-9
+
+One input field expects the block id and one input field expects a color.
+
+One button applies the given color to the given block and the other is the reset button.
+
+Reset button turns the background colour for all the blocks to transparent.
+
+When the background-color is applied to a block, the background-color for all other blocks should go transparent.
+
+If reset button is pressed, the background-color for all the blocks should go transparent
+
+Following ids are required in the following elements:
+
+
+    Input that accepts block id: block_id
+
+    Input that accepts color: colour_id
+
+    Button that applies background-color: change_button
+
+    Button that resets background-color: reset_button
+
+    the grid with the id and value 1-9 like below:
+    <div id="1" value="1">
+    <div id="2" value="2">
+    <div id="3" value="3">
+
+
+      
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asian Paints</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <label for="block">Block:</label>
+    <input type="number" min="1" max="9" name="block" id="block_id">
+    <label for="color">Color:</label>
+    <input type="text" name="color" id="color_id">
+    <div class="buttons">
+      <button onclick="apply();" id="change_button">Apply</button>
+      <button id="reset_button" onclick="reset();">Reset</button>
+    </div>
+    <div class="gallery">
+      <div class="img" id="1" value="1"></div>
+      <div class="img" id="2" value="2"></div>
+      <div class="img" id="3" value="3"></div>
+      <div class="img" id="4" value="4"></div>
+      <div class="img" id="5" value="5"></div>
+      <div class="img" id="6" value="6"></div>
+      <div class="img" id="7" value="7"></div>
+      <div class="img" id="8" value="8"></div>
+      <div class="img" id="9" value="9"></div>
+    </div>
+  </div>
+</body>
+</html>

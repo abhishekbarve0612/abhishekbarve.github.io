@@ -1,0 +1,59 @@
+<!--
+
+  Better Instagram
+Given a grid of 6 pictures. Allow repositioning of the pics with mouse drag. This is one feature that even Instagram doesn't support as of now!
+
+Acceptance Criteria:
+
+
+    The user has to create an interface with 6 divs with ids as div1, div2, div3, div4, div5 and div6. Each div should have a child node that is an img tag.
+
+    Each image tag inside the div should have ids as drag1, drag2, drag3, drag4, drag5 and drag6. The image inside div with id=div1 should have id=drag1, similar for other 5 blocks.
+
+    All the 6 images should be draggable and all 6 divs should be droppable so as to enable users to rearrange the images in any pattern.
+
+    When an image is dragged and dropped from one div to another and the div on which we are going to drop contains an image, the images should be swapped between the div from where the image was picked and the div where the image is being dropped.
+
+
+    Please use images that are <10kb
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Instagram</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Better Instagram</h3>
+    <div class="images">
+      <div class="img" id="div1"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag1" src="https://picsum.photos/id/20/150" alt="">
+      </div>
+      <div class="img" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag2" src="https://picsum.photos/id/22/150" alt="">
+      </div>
+      <div class="img" id="div3"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag3" src="https://picsum.photos/id/21/150" alt="">
+      </div>
+    </div>
+    <div class="images">
+      
+      <div class="img" id="div4"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag4" src="https://picsum.photos/id/24/150" alt="">
+      </div>
+      <div class="img" id="div5"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag5" src="https://picsum.photos/id/25/150" alt="">
+      </div>
+      <div class="img" id="div6"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <img id="drag6" src="https://picsum.photos/id/26/150" alt="">
+      </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
