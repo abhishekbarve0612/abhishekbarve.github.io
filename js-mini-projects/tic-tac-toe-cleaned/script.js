@@ -79,6 +79,9 @@ function reset() {
   var cells = document.querySelectorAll(".cell");
   for (const cell of cells) {
       cell.innerText = "";
+      console.log("In Here also");
   }
-  statusDisplay,innerText = "";
+  console.log("In Here");
+  statusDisplay.innerText = "";
+  gameOver = false;
 }
