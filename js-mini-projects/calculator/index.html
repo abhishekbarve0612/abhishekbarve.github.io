@@ -1,0 +1,82 @@
+<!--
+  Create a basic calculator using HTML, CSS and JAVASCRIPT which perform simple +, - , /, * operations. Make it clean and pretty
+
+Acceptance Criteria:
+
+
+    Create number buttons with id "block0" to "block9".
+
+    Create buttons for operations with ids "plus", "minus", "multiply", "divide" for the respective operation.
+    and make one clear button.
+
+    Create button for decimal operations with id "dot" for respective operation.
+
+    There should be a button that, on click, displays the answer. This button should have id="ans"
+
+    There should be a reset button that, on click, clears the answer. This button should have id="clr"
+
+    On division by 0, the answer should be 'Infinity'
+
+    On division of 0/0 it should give 'NaN'
+
+    The element where input/output is displayed should be of input type and have id="input". The value should get updated with every calculation
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="result-area">
+      <input class="input" id="input" value = "" />
+    </div>
+    <div class="input-section">
+      <div class="numbers">
+        <div class="row">
+          <div class="number" onclick="numberClick(this);" id="block1">1</div>
+          <div class="number" onclick="numberClick(this);" id="block2">2</div>
+          <div class="number" onclick="numberClick(this);" id="block3">3</div>
+        </div>
+        <div class="row">
+          <div class="number" onclick="numberClick(this);" id="block4">4</div>
+          <div class="number" onclick="numberClick(this);" id="block5">5</div>
+          <div class="number" onclick="numberClick(this);" id="block6">6</div>
+        </div>
+        <div class="row">
+          <div class="number" onclick="numberClick(this);" id="block7">7</div>
+          <div class="number" onclick="numberClick(this);" id="block8">8</div>
+          <div class="number" onclick="numberClick(this);" id="block9">9</div>
+        </div>
+        <div class="row">
+          <div class="number" onclick="numberClick(this);" id="dot">.</div>
+          <div class="number" onclick="numberClick(this);" id="block0">0</div>
+          <div class="number reset" id="clr" onclick="reset(this);">clear</div>
+        </div>
+      </div>
+      <div class="symbols">
+        <div class="row">
+          <div class="symbol" onclick="symbolClicked(this);" id="plus">+</div>
+          <div class="symbol" onclick="symbolClicked(this);" id="minus">-</div>
+        </div>
+        <div class="row">
+          <div class="symbol" onclick="symbolClicked(this);" id="multiply">*</div>
+          <div class="symbol" onclick="symbolClicked(this);"  id="divide">/</div>
+        </div>
+        <div class="row">
+          <div class="symbol" onclick="symbolClicked(this);" id="mod">%</div>
+          <div class="symbol" onclick="symbolClicked(this);" id="power">^</div>
+        </div>
+        <div class="row">
+          <div class="equal"  onclick="showResult(this);" id="ans">=</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

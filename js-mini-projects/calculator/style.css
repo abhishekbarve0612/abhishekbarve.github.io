@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkslategray;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.numbers,
+.symbols {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.number,
+.symbol,
+.equal {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+.equal {
+  width: 200px;
+  background-color: wheat;
+  color: firebrick;
+}
+
+.reset {
+  background-color: firebrick;
+  color: white;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 530px;
+  height: 70px;
+  background-color: wheat;
+  color: firebrick;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
